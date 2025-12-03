@@ -1,0 +1,117 @@
+body{
+    display:flex;
+    flex-direction: row;   
+    gap:5px;
+}
+
+div{
+    width:100%;
+    max-width:400px;
+    height:200px;
+    background-color:rgb(255, 145, 0);
+    /*rgin-top: 400px;
+    padding-left: 30px;*/
+   
+}
+
+/*.hello{
+    transform: 
+        translate(200px, 250px)
+        rotate(50deg)
+        scale(2, 1)
+        skew(20deg);
+}
+.hello:hover{
+    background-color:red;
+    cursor:pointer;
+
+}
+a:visited{
+    color:green;
+
+}
+a:active{
+    color:red;
+}
+a:focus{
+    color:yellow;
+}
+body{
+    display: sticky;
+}*/
+.hii{
+    background-color: rgb(0, 60, 255);
+    width: 200px;
+    height: 200px;
+    transition: all 4s;
+    /*ransition: all 4s linear;/
+    /transition: all 4s ease-in-out;/
+    /animation:move 4d timing ease 5s delay iteration-count direction fill-mode;*/
+    animation:move 4s ease 5s infinite forwards;
+}
+
+/*ii:hover{
+    /*ansform: rotate(360deg);
+    transform: translate(200px);
+}
+*/
+@keyframes move{
+   0%{
+    transform: translate(0px);
+   }
+    50%{
+        background-color: brown;
+        transform:translate(100px) rotate(360deg);
+    }
+    100%{
+        transform: translate(200px);
+    }
+       
+}
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 8px solid #ccc;
+  border-top-color: rgb(255, 0, 13);
+  border-radius: 50%;
+  background-color: black;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.hello{
+    background-color: rgb(0, 60, 255);
+    width: 200px;
+    height: 200px;
+    transition: all 4s;
+    /*ransition: all 4s linear;/
+    /transition: all 4s ease-in-out;/
+    /animation:move 4d timing ease 5s delay iteration-count direction fill-mode;*/
+    animation:move 4s ease 5s infinite forwards;
+}
+@keyframes move{
+   0%{
+    transform: translate(0px);
+   }
+    50%{
+        background-color: brown;
+        transform:scale(2);
+        transform:translate(100px) rotate(360deg);
+    }
+    100%{
+        transform: translate(200px);
+    }
+       
+}
+.box{
+    width: 300px;
+    height: 400px;
+    border:solid 2px green;
+    box-shadow: 5px 5px 10px gray;
+    background-color: white;
+    
+}
